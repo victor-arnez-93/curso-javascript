@@ -1,0 +1,34 @@
+comentários em JS
+
+// para comentar numa mesma linha
+/* */ para comentar em mais de uma linha
+
+= -> recebe
+
+null = nulo, não recebe nada
+
+var = variável, ex(var n1, varn2, varn3)
+
+nome de cada variável é chamado de identificador
+IDENTIFICADORES
+Podem começar com uma letra, $ ou _
+Não podem começar com números
+É possível utilizar letras e números
+É possível usar acentos e símbolos
+Não podem conter espaços
+Não podem ser palavras reservadas (ex function, var, alert)
+Maiúsculas e minúsculas fazem diferença
+Tente escolher nomes coerentes para as variáveis
+Variáveis servem para guardar dados
+
+DATA TYPES
+5 18 -12 = number (Infinity, NaN)
+"Google", 'Javascript', `Maria` ou número de cpf por ex. = string
+True, False = boolean
+Null
+Undefined
+Object
+Array
+Function
+
+comando 'typeof'
