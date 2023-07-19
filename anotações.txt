@@ -157,3 +157,23 @@ OPERADORES LÓGICOS
 
 -- Quando eu tenho operadores aritméticos, relacionais e lógicos na mesma expressão, primeiro ele faz todos os aritméticos, depois os relacionais e por último os lógicos.--
 
+-- Se eu tiver um E, um OU e um NÃO, a ordem de execução é sempre essa primeiro NÃO, depois E, depois OU.--
+
+
+ORDEM PRECEDÊNCIA
+
+()**/ -> aritméticos
+><>= -> relacionais, não tem ordem de precedência e sim por leitura
+!         |
+&&        |---> lógicos, primeiro NÃO, depois E, e por último OU.  
+||        |
+
+
+OPERADOR TERNÁRIO
+
+? -> 
+: ->
+
+exemplo:
+teste?true:false
+média>=7.0?"APROVADO":"REPROVADO"
