@@ -84,3 +84,76 @@ EXEMPLO FEITO NO NODE
 'O aluno Victor com 29 anos tirou a nota 5.5'
 > `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
 'O aluno Victor com 29 anos tirou a nota 5.5'
+
+OPERADORES
+
+aritméticos
+atribuição
+relacionais
+lógicos
+ternário
+
+Aritméticos
+5 + 2 -> 7
+5 - 2 -> 3
+5 * 2 -> 10 (multiplicação)
+5 / 2 -> 2.5
+5 % 2 -> 1 (resto da divisão inteira)
+5 ** 2 -> 25 (ao quadrado)
+
+5 + 3 / 2 = 6.5 , porque ele faz primeiro a divisão depois a soma
+(5 + 3) / 2 = 4 porque entre parênteses ele faz na ordem correta
+
+
+PRECENDÊNCIA
+
+() -> parênteses
+**  -> potências
+* / % -> multiplicação, divisão, resto da divisão ( esses tem a mesma ordem você define pela posição)
++ - -> adição e subtração
+
+SIMPLIFICANDO
+
+n = n + 4   -> n += 4
+n = n - 5   -> n -= 5
+n = n * 4   -> n *= 4
+n = n / 2   -> n /= 2
+n = n ** 2  -> n **= 2
+n = n % 5   -> n %= 5
+
+OPERADORES RELACIONAIS
+
+>   -> maior
+<   -> menor
+>=  -> maior ou igual
+<=  -> menor ou igual
+==  -> igual
+!=  -> diferente
+!== -> desigual restrito
+=== -> idêntico
+
+5 > 2 = true
+7 < 4 = false
+8 >= 8 = true
+9 <= 7 = false
+5 == 5 = true
+4 != 4 = false
+5 == '5' = true
+5 === '5' = false
+
+var a = 8
+var b = 15
+
+a > b 
+false
+a < b
+true
+
+OPERADORES LÓGICOS
+
+! -> negação
+&& -> conjunção
+|| -> disjunção
+
+-- Quando eu tenho operadores aritméticos, relacionais e lógicos na mesma expressão, primeiro ele faz todos os aritméticos, depois os relacionais e por último os lógicos.--
+
