@@ -1,0 +1,86 @@
+comentários em JS
+
+// para comentar numa mesma linha
+/* */ para comentar em mais de uma linha
+
+= -> recebe
+
+null = nulo, não recebe nada
+
+var = variável, ex(var n1, varn2, varn3)
+
+nome de cada variável é chamado de identificador
+IDENTIFICADORES
+Podem começar com uma letra, $ ou _
+Não podem começar com números
+É possível utilizar letras e números
+É possível usar acentos e símbolos
+Não podem conter espaços
+Não podem ser palavras reservadas (ex function, var, alert)
+Maiúsculas e minúsculas fazem diferença
+Tente escolher nomes coerentes para as variáveis
+Variáveis servem para guardar dados
+
+DATA TYPES
+5 18 -12 = number (Infinity, NaN)
+"Google", 'Javascript', `Maria` ou número de cpf por ex. = string
+True, False = boolean
+Null
+Undefined
+Object
+Array
+Function
+
+comando 'typeof'
+
+ANOTAÇÕES AULA 06 EXERCICIO 03
+
+Converter string em número
+
+Number.parseInt(n)
+Number.parseFloat(n) -> número com vírgula
+Number(n) -> modo atual em que ele se vira para decidir qual o tipo do valor
+
+<script>
+        var n1 = Number(window.prompt('Digite um número: ')) // String por isso precisa converter
+        var n2 = Number(window.prompt('Digite outro número: ')) // String por isso precisa converter
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s) // concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação  
+    </script>
+
+Converter número em string
+
+String(n)
+n.toString()
+
+FORMATANDO STRINGS
+s.lenght -> quantos caracteres a string tem
+s.toUpperCase() -> tudo para Maiúsculas
+so.toLowerCase() -> tudo para minúsculas
+
+FORMATANDO NÚMEROS
+n1.toFixed(2)
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) -> mostrar valores em dinheiro
+
+
+
+EXEMPLO FEITO NO NODE
+
+> nome = 'Victor'
+'Victor'
+> idade = 29
+29
+> nota = 5.5
+5.5
+> nome 
+'Victor'
+> idade
+29
+> nota
+5.5
+> 'O aluno ' + nome + ' com ' + idade + ' anos tirou a nota ' + nota
+'O aluno Victor com 29 anos tirou a nota 5.5'
+> `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+'O aluno Victor com 29 anos tirou a nota 5.5'
