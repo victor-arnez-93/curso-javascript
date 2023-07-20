@@ -177,3 +177,33 @@ OPERADOR TERNÁRIO
 exemplo:
 teste?true:false
 média>=7.0?"APROVADO":"REPROVADO"
+
+
+DOM
+Document Object Model
+É basicamente um conjunto de objetos dentro do seu navegador, que vai dar acesso aos componentes internos do seu website.
+
+                                              Árvore DOM 
+
+                                                window
+                            location           document         history
+                                                   | 
+                                                 html
+
+                                        head            body
+                                          |              |                                       
+                                    meta    title        |
+                                                         |
+                                                         |
+                                                    h1  p   p   div
+                                                            |
+                                                            |
+                                                          strong
+O que está acima é parent e abaixo é child, exemplo nesse caso html é child de document e vice versa.
+
+SELECIONANDO
+por Marca -> getElementsByTagName()
+por ID -> getElementById()
+por Nome -> getElementsByName()
+por Classe -> getElementsByClassName()
+por Seletor -> querySelector() ou querySelectorAll()
