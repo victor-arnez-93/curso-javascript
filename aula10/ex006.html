@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            background-color: darkblue;
+            color: orange;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+        <strong>Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        //a.addEventListener('click', clicar)
+        //a.addEventListener('mouseenter', entrar)
+        //a.addEventListener('mouseout', sair)
+        //fazendo assim pode deixar o HTML limpo só com id='area', apagando os onclick, onmouse etc.
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor = 'orange'
+            a.style.color = 'white'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+        function saiu() {
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'darkblue'
+            a.style.color = 'orange'
+        }
+    </script>
+</body>
+</html>

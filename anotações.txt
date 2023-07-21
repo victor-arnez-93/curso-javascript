@@ -207,3 +207,10 @@ por ID -> getElementById()
 por Nome -> getElementsByName()
 por Classe -> getElementsByClassName()
 por Seletor -> querySelector() ou querySelectorAll()
+
+FUNÇÕES
+function ação(param) {
+
+}
+
+parâmetro
