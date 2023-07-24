@@ -213,4 +213,16 @@ function ação(param) {
 
 }
 
-parâmetro
+(param) = parâmetro
+
+CONDIÇÕES
+Estrutura Básica
+
+if (condição) {
+    true
+} else {
+    false
+}
+
+IF = SE
+ELSE = SE NÃO
