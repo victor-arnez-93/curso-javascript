@@ -15,12 +15,12 @@
     <script>
         function verificar() {
             var pais = window.document.getElementById('txtpais')
-            var res = window.document.getElementById('res')
-            var nac = Text(txtpais.value)
+            var nacionalidade = window.document.getElementById('nac')
+            var nac = Text(pais.value)
             if (nac = Brasil) {
-                nac.innerHTML = <p>"Você é brasileiro!</p>
+                nac.innerHTML = `<p>Você é brasileiro!</p>`
             } else {
-                nac.innerHTML = <p>"Você é estrangeiro!"</p>
+                nac.innerHTML = `<p>"Você é estrangeiro!"</p>`
             }
         }
     </script>
