@@ -226,3 +226,37 @@ if (condição) {
 
 IF = SE
 ELSE = SE NÃO
+
+REPETIÇÕES
+
+-- Estrutura de repetição com teste lógico no início
+
+while (condição) {
+
+}
+
+-- Estrutura de repetição com teste lógico no final
+
+do {
+    
+} while (condição)
+
+EXEMPLOS DA PRIMEIRA 
+function comerPizza() {
+  while (temFatia()) {
+    comerFatia()
+  }
+}
+
+var c = 1
+while (c <= 10) {
+    console.log(`Passo ${c}`)
+    c++ // c = c + 1
+}
+
+EXEMPLO DA SEGUNDA
+var c = 1
+do {
+    console.log(`Passo ${c}`)
+    c++ // c = c + 1
+} while (c <= 10)
