@@ -229,13 +229,13 @@ ELSE = SE NÃO
 
 REPETIÇÕES
 
--- Estrutura de repetição com teste lógico no início
+-- Estrutura de repetição com teste lógico no início (while)
 
 while (condição) {
 
 }
 
--- Estrutura de repetição com teste lógico no final
+-- Estrutura de repetição com teste lógico no final (do while)
 
 do {
     
@@ -260,3 +260,23 @@ do {
     console.log(`Passo ${c}`)
     c++ // c = c + 1
 } while (c <= 10)
+
+REPETIÇÕES COM FOR
+
+for (inicio ; teste; incr) {
+
+}
+
+EXEMPLO (c++ significa c+1)
+
+var c=1
+while (c<=10){
+
+  c++               
+}
+
+COM FOR
+
+for (c=1;c<=10;c++) {
+
+}
