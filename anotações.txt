@@ -280,3 +280,36 @@ COM FOR
 for (c=1;c<=10;c++) {
 
 }
+
+VARIÁVEIS 
+Variáveis simples só conseguem armazenar um valor por vez.
+Variáveis compostas devem ser capazes de armazenar vários valores em uma mesma estrutura.
+
+Um array, ou vetor, ou variável composta, é uma variável que tem varios elementos, cada elemento tem seu valor e uma chave de identificação.
+
+vaga a = [a1, a2, a3]
+
+array,vetor
+índice, chave
+elemento
+conteúdo,valor
+
+var num = [5,8,4]
+num[3]=6 -> ele cria um novo valor 
+num.push(7) -> acrescente valores, nesse caso na chave 4 e o valor 7
+num.lenght -> pega o cumprimento, quantas casas/elementos tem no array
+num.sort() -> coloca os valores em ordem crescente
+num.indexOf() -> buscar um valor
+
+for (var pos=0;pos<num.lenght;pos++) {
+  console.log(num[pos])
+}
+
+OUTRA FORMA - SIMPLIFICADA
+
+for (var pos in num){
+  console.log(num[pos])
+}
+
+Var também pode ser let.
+Essa sintaxe do for só funciona para arrays e objetos.
