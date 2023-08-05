@@ -326,3 +326,19 @@ parâmetro
 ação
 retorno
 
+EXEMPLOS DE ARRAY E OBJETO
+
+ARRAY - VETOR
+let num = [5,8,4]
+
+num
+5 8 4
+0 1 2
+
+OBJECT - OBJETO
+let amigo = {nome:´José´,sexo:´M´,peso:85.4,engordar(p){}}
+amigo
+
+José      M     85.4    [function]
+nome    sexo    peso    engordar()
+
