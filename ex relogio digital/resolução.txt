@@ -1,0 +1,61 @@
+const horas = document.getElementById('horas');
+const minutos = document.getElementById('minutos');
+const segundos = document.getElementById('segundos');
+
+const relogio = setInterval(function time() {
+    var dateToday = new Date();
+    var hr = dateToday.getHours();
+    var min = dateToday.getMinutes();
+    var sec = dateToday.getSeconds();
+
+    if (hr < 10) h = '0' + hr;
+    if (min < 10) m = '0' + min;
+    if (sec < 10) s = '0' + sec;
+
+    horas.textContent = hr;
+    minutos.textContent = min;
+    segundos.textContent = sec;
+
+    atualizarFundoEImagens(hr); // Chame a função para atualizar o fundo e as imagens
+}, 1000); // 1000 milissegundos = 1 segundo
+
+function atualizarFundoEImagens(hr) {
+    // Defina as horas para os momentos do dia que desejar (manhã, tarde e noite)
+    const manhaInicio = 6;
+    const tardeInicio = 12;
+    const noiteInicio = 18;
+
+    // Defina os caminhos das imagens para manhã, tarde e noite
+    const imagemManha = 'caminho_da_imagem_manha.jpg'; // Substitua pelo caminho da imagem da manhã
+    const imagemTarde = 'caminho_da_imagem_tarde.jpg'; // Substitua pelo caminho da imagem da tarde
+    const imagemNoite = 'caminho_da_imagem_noite.jpg'; // Substitua pelo caminho da imagem da noite
+
+    // Defina o gradiente de cores para manhã, tarde e noite
+    const gradienteManha = 'linear-gradient(to bottom, #ffcccc, #6699ff)';
+    const gradienteTarde = 'linear-gradient(to bottom, #ffcc99, #ff6666)';
+    const gradienteNoite = 'linear-gradient(to bottom, #000033, #000000)';
+
+    // Altere o fundo gradiente de acordo com a hora do dia
+    if (hr >= manhaInicio && hr < tardeInicio) {
+        document.body.style.background = gradienteManha;
+        document.body.style.backgroundSize = 'cover';
+    } else if (hr >= tardeInicio && hr < noiteInicio) {
+        document.body.style.background = gradienteTarde;
+        document.body.style.backgroundSize = 'cover';
+    } else {
+        document.body.style.background = gradienteNoite;
+        document.body.style.backgroundSize = 'cover';
+    }
+
+    // Altere a imagem de acordo com a hora do dia
+    if (hr >= manhaInicio && hr < tardeInicio) {
+        // Altere a imagem para a da manhã
+        // Exemplo: document.getElementById('imagem').src = imagemManha;
+    } else if (hr >= tardeInicio && hr < noiteInicio) {
+        // Altere a imagem para a da tarde
+        // Exemplo: document.getElementById('imagem').src = imagemTarde;
+    } else {
+        // Altere a imagem para a da noite
+        // Exemplo: document.getElementById('imagem').src = imagemNoite;
+    }
+}
